@@ -1,0 +1,11 @@
+.success {
+  color: green;
+}
+
+.warn {
+  color: goldenrod;
+}
+
+.error {
+  color: red;
+}
