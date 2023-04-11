@@ -6,20 +6,32 @@ export default function FirstPost() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>Static Generation or SSR</title>
       </Head>
-      <h1>First Post</h1>
-      <p>Dinosaurs are dead...</p>
+      <h2>Static Generation（静的生成）</h2>
+      <p>
+        CDNで提供可能かつ高速かつSEO対策にもなるため、基本的には静的生成を選択すべし。
+      </p>
+      <p>
+        ビルド時にHTMLを生成する事前レンダリング方式。その後、事前レンダリングされたHTMLが各リクエストで再利用される。
+      </p>
+      <p>
+        このコンテンツは、事前生成可能か？を自問自答し、OKなら静的生成を選択する。
+      </p>
+      <h2>Server-side Rendering（SSR）</h2>
+      <p>
+        ユーザのリクエスト毎に異なるページを表示する必要がある場合、SSRを選択すべし。
+      </p>
+      <p>
+        リクエストに対して、都度ページをサーバ側で生成し、最新のページ状態をユーザに提供できる。
+      </p>
       <Alert type="success">
-        <h2>ここは、SUCCESSゾーン</h2>
         <p>成功！</p>
       </Alert>
       <Alert type="warn">
-        <h2>ここは、WARNNINGゾーン</h2>
         <p>注意！</p>
       </Alert>
       <Alert type="error">
-        <h2>ここは、ERRORゾーン</h2>
         <p>やばいと思うよ！！！</p>
       </Alert>
     </Layout>

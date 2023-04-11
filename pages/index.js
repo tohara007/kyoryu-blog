@@ -16,7 +16,17 @@ export default function Home() {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
-      <Link href="/posts/first-post">Check here !</Link>
+      <section>
+        <h2>Check my Posts!</h2>
+        <div>
+          <Link className={utilStyles.newPost} href="/posts/second-post">
+            Second POST
+          </Link>
+        </div>
+        <div>
+          <Link href="/posts/first-post">First POST</Link>
+        </div>
+      </section>
     </Layout>
   );
 }
