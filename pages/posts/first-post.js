@@ -6,7 +6,7 @@ export default function FirstPost() {
   return (
     <Layout>
       <Head>
-        <title>Static Generation or SSR</title>
+        <title>Static Generation or SSR or CSR</title>
       </Head>
       <h2>Static Generation（静的生成）</h2>
       <p>
@@ -24,6 +24,17 @@ export default function FirstPost() {
       </p>
       <p>
         リクエストに対して、都度ページをサーバ側で生成し、最新のページ状態をユーザに提供できる。
+      </p>
+      <h2>Client-side Rendering（CSR）</h2>
+      <p>
+        データを事前にレンダリングする必要がない場合、クライアント側レンダリングを使用することも可能。
+      </p>
+      <p>
+        外部データを必要とない部分を静的生成し、ページ読込後、JSを利用してクライアント側から外部データを取得＆ページに反映させる。
+      </p>
+      <p>
+        ユーザーダッシュボードページに適する。（ダッシュボードは非公開のユーザー固有のページであるため、SEOを考える必要なく、ページを事前にレンダリングする必要もない。データは頻繁に更新されるため、リクエスト時のデータ
+        フェッチが必要。）
       </p>
       <Alert type="success">
         <p>成功！</p>

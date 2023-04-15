@@ -31,9 +31,12 @@ export default function Home({ allPostsData }) {
       <section>
         <h2>Check my Posts!</h2>
         <div>
-          <Link className={utilStyles.newPost} href="/posts/second-post">
-            Second POST
+          <Link className={utilStyles.newPost} href="/posts/third-post">
+            Third POST
           </Link>
+        </div>
+        <div>
+          <Link href="/posts/second-post">Second POST</Link>
         </div>
         <div>
           <Link href="/posts/first-post">First POST</Link>
