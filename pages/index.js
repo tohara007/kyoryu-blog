@@ -22,24 +22,23 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I'm Kyoryu san</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p>I'm an engineer</p>
       </section>
       <section>
         <h2>Check my Posts!</h2>
         <div>
-          <Link className={utilStyles.newPost} href="/posts/third-post">
-            Third POST
+          <Link className={utilStyles.newPost} href="/oldPosts/fourth-post">
+            Fourth POST
           </Link>
         </div>
         <div>
-          <Link href="/posts/second-post">Second POST</Link>
+          <Link href="/oldPosts/third-post">Third POST</Link>
         </div>
         <div>
-          <Link href="/posts/first-post">First POST</Link>
+          <Link href="/oldPosts/second-post">Second POST</Link>
+        </div>
+        <div>
+          <Link href="/oldPosts/first-post">First POST</Link>
         </div>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
