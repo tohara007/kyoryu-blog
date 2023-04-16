@@ -9,7 +9,13 @@ export default function tips() {
       </Head>
       <h2>Tips集</h2>
       <p>
-        markdownコンテンツは、「remark」および「remark-html」ライブラリを利用する。
+        markdownコンテンツのメタデータやコンテンツの読込は、「gray-matter」ライブラリを利用する。
+      </p>
+      <p>
+        markdownコンテンツのHTML文字列への変換は、「remark」および「remark-html」ライブラリを利用する。
+      </p>
+      <p>
+        「__htmlプロパティ」を持つオブジェクトをHTMLコンテンツとして表示するには、「dangerouslySetInnerHTML」属性を利用する。
       </p>
     </Layout>
   );
