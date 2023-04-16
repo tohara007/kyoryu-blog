@@ -40,6 +40,9 @@ export default function Home({ allPostsData }) {
         <div>
           <Link href="/oldPosts/first-post">First POST</Link>
         </div>
+        <div>
+          <Link href="/oldPosts/tips-post">Tips</Link>
+        </div>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
