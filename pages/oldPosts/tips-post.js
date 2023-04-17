@@ -17,6 +17,7 @@ export default function tips() {
       <p>
         「__htmlプロパティ」を持つオブジェクトをHTMLコンテンツとして表示するには、「dangerouslySetInnerHTML」属性を利用する。
       </p>
+      <p>カスタム404ページを用意する場合、「pages/404.js」を作成する。</p>
     </Layout>
   );
 }

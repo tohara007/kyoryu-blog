@@ -30,6 +30,19 @@ export default function FourthPost() {
         (ファイル名で[キー名]使用しているため)。
       </p>
       <p>この原則を守れないと、「getStaticPaths」関数実行に失敗する。</p>
+      <h3>その他メモ</h3>
+      <p>
+        getStaticPropsと同様に、「getStaticPaths」は、任意のデータソースからデータを取得できる。
+      </p>
+      <p>
+        開発中(npm run devまたはyarn
+        dev)では、リクエストごとにgetStaticPathsが実行される。
+      </p>
+      <p>本番環境では、ビルド時に1回だけgetStaticPathsが実行される。</p>
+      <p>
+        「getStaticPaths」の返却値として「fallback:
+        false」が設定されている場合、pathにないページが呼び出された場合、404ページに遷移する。
+      </p>
     </Layout>
   );
 }
