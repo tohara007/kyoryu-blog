@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import Link from 'next/link';
 
 export default function tips() {
   return (
@@ -18,6 +19,13 @@ export default function tips() {
         「__htmlプロパティ」を持つオブジェクトをHTMLコンテンツとして表示するには、「dangerouslySetInnerHTML」属性を利用する。
       </p>
       <p>カスタム404ページを用意する場合、「pages/404.js」を作成する。</p>
+      <p>
+        Vercelを使って、無料でアプリをデプロイ可能（
+        <Link href="https://nextjs.org/learn/basics/deploying-nextjs-app/deploy">
+          Vercelのデプロイ方法
+        </Link>
+        参照）。
+      </p>
     </Layout>
   );
 }
