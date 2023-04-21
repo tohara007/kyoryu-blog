@@ -25,3 +25,23 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* MarkDown内で利用されるコードブロックやインラインに対応するCSS */
+pre, code {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+pre {
+  padding: 10px;
+}
+
+code {
+  padding: 5px;
+}
+
+pre code {
+  padding: 0;
+}
