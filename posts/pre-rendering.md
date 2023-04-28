@@ -20,3 +20,5 @@ export default function NewFuncA () {
 ```
 
 これは、 `インライン` です
+
+タグ付けたい場合、mdファイルのメタ要素の中に入れてあとでCSSで調整すればいいや！
